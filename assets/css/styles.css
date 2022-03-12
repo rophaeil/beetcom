@@ -111,9 +111,13 @@ img {
   cursor: pointer;
   margin-bottom: 3.5rem;
 }
-
+.nav__close:hover {
+  border: 1px solid var(--title-color-dark);
+  border-radius: 50%;
+  transition: .25s;
+}
 .nav__img {
-  width: 70px;
+  width: 90px;
 }
 
 .nav__mask {
@@ -213,7 +217,8 @@ img {
 
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  /* box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1); */
+  background-color: hsl(273, 97%, 66%) ;
 }
 
 /* Active link */
