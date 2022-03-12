@@ -200,9 +200,15 @@ img {
 .header__logo, .header__toggle {
   color: var(--title-color);
 }
-
+.header .header__toggle .bx {
+  font-size: 35px;
+  line-height: 5;
+}
+ /* position logo */
 .header__logo {
   font-weight: 500;
+  position: absolute;
+  left: 45%;
 }
 
 .header__toggle {
@@ -218,20 +224,48 @@ img {
 /* Change background header */
 .scroll-header {
   /* box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1); */
-  background-color: hsl(273, 97%, 66%) ;
+  background-color: hsl(273deg 97% 66% / 23%);
+
 }
 
 /* Active link */
 .active-link {
   color: var(--title-color-dark);
 }
+/* -----------------------------------------in all pages ----------------------------------------------------------------------*/
+.sign {
+  display: flex;
+  position: relative;
+  width: 9%;
+  justify-content: space-between;
+}
+.sign .bx {
+  cursor: pointer;
+  font-size: 29px;
+  line-height: 52px;
 
+}
+
+.sign .log {
+  display: flex;
+  justify-content: space-between;
+}
+.sign .log .bx {
+  font-size: 34px;
+  line-height: 55px;
+  cursor: pointer;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .sign {
+    display: flex;
+    width: 67px;
+    margin-top: 17px;
   }
 }
 
