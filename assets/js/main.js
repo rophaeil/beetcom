@@ -56,3 +56,9 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+// --------------------------------------------------
+let log =document.querySelector(".log");
+let tooltip =document.querySelector(".tooltip");
+log.onclick = function() {
+    tooltip.classList.add(".open")
+};

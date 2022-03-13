@@ -255,6 +255,62 @@ img {
   line-height: 55px;
   cursor: pointer;
 }
+#services {
+  background-image: linear-gradient(red,green,black);
+}
+.tooltip {
+  width: 225px;
+  background-color: #eee;
+  position: relative;
+  top: 159px;
+  right: -79px;
+  margin: 0;
+  padding: 0px;
+  display: block;
+  transition: .15s;
+  /* transform: translateY(-326px); */
+}
+.tooltip .open {
+  transform: translateY(0);
+}
+.tooltip p {
+  padding: 10px;
+  text-align: center;
+}
+.tip .btn-log {
+    color: wheat;
+    background-color: red;
+    display: inline-block;
+    margin-left: 35%;
+    width: fit-content;
+    border-radius: 5px;
+    width: 53px;
+    text-align: center;
+} 
+.tip .btn-log:hover {
+  background-color: black;
+
+}
+.tip .reg-tip {
+    background-color: red;
+    display: inline-block;
+    margin-left: 12%;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 172px;
+    padding: 6px;
+}
+.login {
+    background-color: black;
+    color: white;
+    width: 55px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    right: 174px;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
